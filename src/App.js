@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Spinner from "react-spinkit";
 import "./App.css";
+import SideMenu from "./components/Editor/SideMenu/SideMenu";
 
 const Container = lazy(() => import("./containers/Container"));
 const Header = lazy(() => import("./components/Header/Header"));
@@ -15,6 +16,9 @@ function App() {
       >
         <Container>
           <Header />
+          <div>
+            <SideMenu />
+          </div>
         </Container>
       </Suspense>
     </div>
