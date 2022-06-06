@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import Spinner from "react-spinkit";
 import "./App.css";
 
-const Editor = lazy(() => import("./containers/Editor"));
+const Container = lazy(() => import("./containers/Container"));
 const Header = lazy(() => import("./components/Header/Header"));
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
           <Spinner name="ball-clip-rotate-multiple" color="steelblue" />
         }
       >
-        <Editor>
+        <Container>
           <Header />
-        </Editor>
+        </Container>
       </Suspense>
     </div>
   );
