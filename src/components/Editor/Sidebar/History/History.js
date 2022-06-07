@@ -1,21 +1,24 @@
 import { AiOutlineCloudServer } from "react-icons/ai";
 import "./History.css";
 
-const History = () => {
+const History = ({ queryHistory }) => {
   return (
     <section>
       <div className="history__header">
-        <AiOutlineCloudServer />
-        <h3>Queries</h3>
+        <AiOutlineCloudServer className="cloud" />
+        <h3>Queries Saved</h3>
       </div>
 
       <div className="history__queries">
-        <div className="history__query">
-          <p>SELECT * FROM internetData</p>
-        </div>
-        <div className="single__query">
-          <p>SELECT * FROM internetData</p>
-        </div>
+        {queryHistory.length ? (
+          queryHistory.map((query) => (
+            <div className="history__query" key={query}>
+              <code>{query}</code>
+            </div>
+          ))
+        ) : (
+          <code>No Query Saved</code>
+        )}
       </div>
     </section>
   );

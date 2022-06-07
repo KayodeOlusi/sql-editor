@@ -1,1 +1,37 @@
+.code__editor {
+  flex-grow: 1;
+}
 
+.buttons {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-top: 10px;
+}
+
+.code__editor .buttons .run__button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.code__editor .buttons .save__button {
+  border: none;
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.code__editor .buttons .delete__button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}

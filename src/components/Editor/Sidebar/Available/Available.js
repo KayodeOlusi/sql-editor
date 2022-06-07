@@ -5,23 +5,26 @@ const Available = ({ savedQuery, setQuery }) => {
   return (
     <section>
       <div className="available__header">
-        <FcRefresh />
-        <h3>Query History</h3>
+        <FcRefresh className="refresh" />
+        <h3>Queries Available</h3>
       </div>
 
       <div className="available__queries">
         <form>
           <input type="text" placeholder="Search..." />
         </form>
-        {savedQuery.map((query) => (
-          <div
-            onClick={() => setQuery(query)}
-            className="available__query"
-            key={query}
-          >
-            <p>{query}</p>
-          </div>
-        ))}
+
+        <div className="query__container">
+          {savedQuery.map((query) => (
+            <div
+              onClick={() => setQuery(query)}
+              className="available__query"
+              key={query}
+            >
+              <code>{query}</code>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

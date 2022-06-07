@@ -1,5 +1,43 @@
+h3 {
+  font-size: 16px;
+}
+
+code {
+  font-size: 12px;
+}
+
+input {
+  padding: 10px;
+  margin: 0px 10px;
+  width: 85%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
 .available__header {
   display: flex;
+  margin: 0px 10px;
   align-items: center;
   justify-content: space-between;
+}
+
+.available__header .refresh {
+  font-size: 26px;
+}
+
+.query__container {
+  margin-top: 20px;
+}
+
+.available__queries .available__query {
+  background-color: white;
+  padding: 1px 2px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.available__queries .available__query p {
+  font-size: 14px;
 }

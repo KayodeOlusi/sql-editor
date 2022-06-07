@@ -16,7 +16,7 @@ function App() {
     "Select * from supplies",
     "Select supplierId, contactName from suppliers",
   ]);
-  const [queryHistory, setQueryHistory] = useState(["Select * from supplies"]);
+  const [queryHistory, setQueryHistory] = useState([]);
 
   return (
     <div className="App">
@@ -39,6 +39,8 @@ function App() {
               setQuery={setQuery}
               savedQuery={savedQuery}
               output={output}
+              setQueryHistory={setQueryHistory}
+              queryHistory={queryHistory}
             />
           </div>
         </Container>
