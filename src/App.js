@@ -1,7 +1,50 @@
+import { Suspense, lazy, useState } from "react";
+import Spinner from "react-spinkit";
 import "./App.css";
 
+const Container = lazy(() => import("./container/Container"));
+const Header = lazy(() => import("./components/Header/Header"));
+const Sidebar = lazy(() => import("./components/Editor/Sidebar/Sidebar"));
+const CodeEditor = lazy(() =>
+  import("./components/Editor/CodeEditor/CodeEditor")
+);
+
 function App() {
-  return <div className="App"></div>;
+  const [query, setQuery] = useState("Select * from supplies");
+  const [output, setOutput] = useState([]);
+  const [savedQuery, setSavedQuery] = useState([
+    "Select * from supplies",
+    "Select supplierId, contactName from suppliers",
+  ]);
+  const [queryHistory, setQueryHistory] = useState(["Select * from supplies"]);
+
+  return (
+    <div className="App">
+      <Suspense
+        fallback={
+          <Spinner name="ball-clip-rotate-multiple" color="steelblue" />
+        }
+      >
+        <Container>
+          <Header />
+          <div className="app__editor">
+            <Sidebar
+              savedQuery={savedQuery}
+              query={query}
+              queryHistory={queryHistory}
+              setQuery={setQuery}
+            />
+            <CodeEditor
+              query={query}
+              setQuery={setQuery}
+              savedQuery={savedQuery}
+              output={output}
+            />
+          </div>
+        </Container>
+      </Suspense>
+    </div>
+  );
 }
 
 export default App;
