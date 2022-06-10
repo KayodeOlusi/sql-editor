@@ -22,7 +22,9 @@ function App() {
     <div className="App">
       <Suspense
         fallback={
-          <Spinner name="ball-clip-rotate-multiple" color="steelblue" />
+          <div className="spinner">
+            <Spinner name="ball-clip-rotate-multiple" color="steelblue" />
+          </div>
         }
       >
         <Container>
