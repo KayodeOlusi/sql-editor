@@ -39,3 +39,12 @@
   border-radius: 5px;
   margin-right: 50px;
 }
+
+@media screen and (max-width: 768px) {
+  .code__editor .buttons .run__button,
+  .code__editor .buttons .save__button,
+  .code__editor .buttons .delete__button {
+    margin-right: 20px;
+    padding: 5px 10px;
+  }
+}
