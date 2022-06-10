@@ -1,5 +1,6 @@
 import Output from "./Output/Output";
 import Screen from "./Screen/Screen";
+import "./CodeEditor.css";
 
 const CodeEditor = ({
   query,
@@ -14,7 +15,9 @@ const CodeEditor = ({
     setQueryHistory([...queryHistory, query]);
   };
 
-  const clearQuery = () => {};
+  const clearQuery = () => {
+    setQuery("");
+  };
 
   return (
     <div className="code__editor">
