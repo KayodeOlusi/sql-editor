@@ -3,7 +3,7 @@ h3 {
 }
 
 code {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 input {
@@ -17,9 +17,13 @@ input {
 
 .available__header {
   display: flex;
-  margin: 0px 10px;
+  margin: 10px 10px;
   align-items: center;
   justify-content: space-between;
+}
+
+.available__header h3 {
+  font-size: 16px;
 }
 
 .available__header .refresh {
@@ -27,13 +31,13 @@ input {
 }
 
 .query__container {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .available__queries .available__query {
   background-color: white;
   padding: 1px 2px;
-  margin: 5px;
+  margin: 20px 5px;
   cursor: pointer;
   border-radius: 3px;
 }

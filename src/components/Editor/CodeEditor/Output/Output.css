@@ -1,3 +1,46 @@
-.output__container h2 {
+.output__container h5 {
+  margin-top: 10px;
   margin-left: 20px;
+}
+
+.output__table {
+  margin-left: 20px;
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.output__table__data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.output__table__data button {
+  background-color: green;
+  border-radius: 5px;
+  color: white !important;
+  border: none;
+  color: #000;
+  font-size: 12px;
+  padding: 10px 15px;
+}
+
+.no__data {
+  text-align: center;
+}
+
+.output__table__container {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  height: 400px;
+  margin-bottom: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .output__table__data button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
 }

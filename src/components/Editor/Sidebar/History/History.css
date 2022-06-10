@@ -1,5 +1,5 @@
 code {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .history__header {
@@ -7,6 +7,10 @@ code {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+.history__header h3 {
+  margin-right: 10px;
 }
 
 .cloud {

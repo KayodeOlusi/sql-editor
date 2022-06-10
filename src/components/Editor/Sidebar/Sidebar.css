@@ -3,4 +3,6 @@
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
+  max-height: 500px;
+  flex-grow: 0.1;
 }
