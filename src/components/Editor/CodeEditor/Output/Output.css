@@ -35,7 +35,7 @@
 .output__table__container {
   overflow-x: scroll;
   overflow-y: scroll;
-  height: 250px;
+  height: 180px;
   background-color: #eee;
   margin-bottom: 20px;
 }
