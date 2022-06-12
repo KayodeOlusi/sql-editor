@@ -1,7 +1,6 @@
 import Output from "./Output/Output";
 import Screen from "./Screen/Screen";
 import "./CodeEditor.css";
-import supplies from "../../../data/supplies.json";
 import shipper from "../../../data/shipper.json";
 import territory from "../../../data/territory.json";
 import toast from "react-hot-toast";
