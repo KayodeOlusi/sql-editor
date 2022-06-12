@@ -9,16 +9,18 @@ An application used for running / executing SQL queries online and analyzing the
 ## Tools Used
 
 **Interface and Stylings**:
-_ React Js
-_ CSS
-_ React Icons
-_ React Spinkit (Loader)
-_ React Hot Toast (Notifications)
-_ Code mirror (Text Editor)
+
+- React Js
+- CSS
+- React Icons
+- React Spinkit (Loader)
+- React Hot Toast (Notifications)
+- Code mirror (Text Editor)
 
 **Data**:
-_ React CSV
-_ [CSV Json](https://csvjson.com)
+
+- React CSV
+- [CSV Json](https://csvjson.com)
 
 ## Page Optimization and Speed
 
