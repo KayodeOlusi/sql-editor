@@ -1,4 +1,4 @@
-import { Suspense, lazy, useState, useEffect } from "react";
+import { Suspense, lazy, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import Spinner from "react-spinkit";
 import "./App.css";
@@ -13,10 +13,10 @@ const CodeEditor = lazy(() =>
 function App() {
   const [query, setQuery] = useState("Select * from territories");
   const [output, setOutput] = useState([]);
-  const [savedQuery, setSavedQuery] = useState([
+  const savedQuery = [
     "Select * from territories",
     "Select supplierId, contactName from suppliers",
-  ]);
+  ];
   const [queryHistory, setQueryHistory] = useState([]);
 
   return (

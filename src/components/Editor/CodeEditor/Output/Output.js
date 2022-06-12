@@ -27,8 +27,8 @@ const Output = ({ output, query }) => {
                   </tr>
                 </thead>
                 <tbody>
-                  {output.map((record) => (
-                    <tr key={record.id}>
+                  {output.map((record, index) => (
+                    <tr key={index}>
                       {Object.values(record).map((value) => (
                         <td key={value}>{value}</td>
                       ))}
