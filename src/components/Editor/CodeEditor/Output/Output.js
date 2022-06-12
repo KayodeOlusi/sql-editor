@@ -4,7 +4,7 @@ import "./Output.css";
 const Output = ({ output, query }) => {
   return (
     <div className="output__container">
-      <h5>Your output wil display below</h5>
+      <h3>Your output wil display below</h3>
 
       <div className="output__container__inner">
         {query && output.length ? (
@@ -18,7 +18,7 @@ const Output = ({ output, query }) => {
             </div>
 
             <div className="output__table__container">
-              <table className="table tabe-hover">
+              <table className="table">
                 <thead>
                   <tr>
                     {Object.keys(output[0]).map((key) => (

@@ -1,3 +1,7 @@
 .screen {
   margin: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
 }

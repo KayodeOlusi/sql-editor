@@ -9,7 +9,7 @@ code {
 input {
   padding: 10px;
   margin: 0px 10px;
-  width: 85%;
+  width: 90%;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -44,4 +44,10 @@ input {
 
 .available__queries .available__query p {
   font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  input {
+    width: 85%;
+  }
 }

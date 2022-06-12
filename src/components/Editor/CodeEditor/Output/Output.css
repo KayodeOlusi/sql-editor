@@ -1,11 +1,10 @@
-.output__container h5 {
+.output__container h3 {
   margin-top: 10px;
   margin-left: 20px;
 }
 
 .output__table {
   margin-left: 20px;
-  background-color: #eee;
   padding: 2px 4px;
   border-radius: 5px;
   margin-right: 10px;
@@ -14,7 +13,9 @@
 .output__table__data {
   display: flex;
   align-items: center;
+  background-color: #eee;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .output__table__data button {
@@ -34,8 +35,37 @@
 .output__table__container {
   overflow-x: scroll;
   overflow-y: scroll;
-  height: 300px;
-  margin-bottom: 10px !important;
+  height: 250px;
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ddd;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
