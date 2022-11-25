@@ -1,7 +1,7 @@
-import { Suspense, lazy, useState } from "react";
-import { Toaster } from "react-hot-toast";
-import Spinner from "react-spinkit";
 import "./App.css";
+import Spinner from "react-spinkit";
+import { Toaster } from "react-hot-toast";
+import { Suspense, lazy, useState } from "react";
 
 const Container = lazy(() => import("./container/Container"));
 const Header = lazy(() => import("./components/Header/Header"));
@@ -11,13 +11,13 @@ const CodeEditor = lazy(() =>
 );
 
 function App() {
-  const [query, setQuery] = useState("Select * from territories");
   const [output, setOutput] = useState([]);
+  const [queryHistory, setQueryHistory] = useState([]);
+  const [query, setQuery] = useState("Select * from territories");
   const savedQuery = [
     "Select * from territories",
     "Select supplierId, contactName from suppliers",
   ];
-  const [queryHistory, setQueryHistory] = useState([]);
 
   return (
     <div className="App">
@@ -32,8 +32,8 @@ function App() {
           <Header />
           <div className="app__editor">
             <Sidebar
-              savedQuery={savedQuery}
               query={query}
+              savedQuery={savedQuery}
               queryHistory={queryHistory}
               setQuery={setQuery}
             />
