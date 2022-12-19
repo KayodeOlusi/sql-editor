@@ -2,7 +2,6 @@ import "./App.css";
 import Spinner from "react-spinkit";
 import { Toaster } from "react-hot-toast";
 import { Suspense, lazy, useState } from "react";
-
 const Container = lazy(() => import("./container/Container"));
 const Header = lazy(() => import("./components/Header/Header"));
 const Sidebar = lazy(() => import("./components/Editor/Sidebar/Sidebar"));
